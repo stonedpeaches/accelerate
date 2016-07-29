@@ -24,12 +24,11 @@ body {
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
 }
-
 #masthead nav ul li {
-    float: left;
-    margin: 0 10px;
+    display: inline-block;
+    margin-left: 30px;
+    text-transform: uppercase;
 }
-
 .button {
     background: none repeat scroll 0 0 #45ac9d;
 }
@@ -45,6 +44,22 @@ body {
 
 .social-media-navigation li {
     color:aqua;
+}
+.top-nav {
+	float: right;
+	padding-top: 22px;
+}
+.top-nav-link {
+	color: inherit;
+	display: inline-block;
+	font-size: 14px;
+	line-height: normal;
+	margin-left: 35px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.top-nav-link:hover {
+	border-bottom: 1px solid;
 }
 
 /* Blog Post Styles */
