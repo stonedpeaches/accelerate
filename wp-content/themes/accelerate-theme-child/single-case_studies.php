@@ -31,7 +31,7 @@ get_header(); ?>
 
             <?php the_content(); ?>
 
-            <p><strong><a href="<?php echo $site_link; ?>">Visit Live Site</a></strong></p>
+            <p><strong><a href="<?php echo $site_link; ?>" target="_blank">Visit Live Site</a></strong></p>
         </aside>
 
 		<div class="case-study-images">
