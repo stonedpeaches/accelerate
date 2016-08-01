@@ -181,10 +181,10 @@ ul.social-media-menu {
     display: inline-block;
     background: rgba(0,0,0,0.8);
     margin: 0px 3px;
-    width: 40px;
+    width: 25px;
     text-align: center;
-    padding: 10px 0;
-    font-size: 0.6em;
+    padding: 4px 0;
+    font-size: 0.5em;
     border-radius: 100%; 
     -webkit-border-radius: 100%; 
     -moz-border-radius: 100%;
@@ -195,54 +195,74 @@ ul.social-media-menu {
 
 /* Contact Us Form */
 
-/* STYLING NINJA FORMS - add to your stylesheet and adjust */
 /* The full form */
 #ninja_forms_form_1_wrap {
-}
-/* Fields marked with an * are required text */
-.ninja-forms-required-items {
-margin-bottom: 15px;
-}
-/* All Input fields */
-.ninja-forms-field {
-border: 1px solid #bfbfbf;
-font-size: 16px;
+    width: 600px;
 }
 
-/* All Form Labels */
-#ninja_forms_field_1_label,
-#ninja_forms_field_2_label,
+
+/* All Input fields */
+.ninja-forms-field {
+    border: 1px solid #bfbfbf;
+    font-size: 16px;
+}
+
+/* Name Form Labels */
+#ninja_forms_field_1_label {
+    font-size: 14px;
+    color: #808080;
+    min-width: 220px;
+    font-weight: 200;
+}
+
+/* Email Form Labels */
+#ninja_forms_field_2_label {
+    font-size: 14px;
+    color: #808080;
+    min-width: 220px;
+    font-weight: 200;
+}
+
+/* Message Form Labels */
 #ninja_forms_field_3_label {
     font-size: 14px;
     color: #808080;
     min-width: 220px;
-}
+    font-weight: 200;
+} 
 
 /* Name field label and input box. 
 NB! Notice the styling changes on resizing the browser. Fix this in your media queries. This will change from theme to theme.*/
 #ninja_forms_field_1_div_wrap,
 #ninja_forms_field_1 {
-width: 40%;
-min-width: 220px;
-height: 35px;
-float: left;
-margin-right: 8px;
+    min-width: 285px;
+    height: 35px;
+    float: left;
+    margin-right: 8px;
 }
 /* Email field input */
 #ninja_forms_field_2{
-width: 40%;
-min-width: 220px;
-height: 35px;	
-float: right;
+    width: 40%;
+    min-width: 285px;
+    height: 35px;	
+    float: right;
 }
+
 /* Message field input */
 #ninja_forms_field_3{
 }
+
 /* The Send button */
 #ninja_forms_field_4 {
-background-color: #45ac9d;
-color: #fff;
+    background-color: #45ac9d;
+    color: #fff;
+    border: 1px solid #45ac9d;
+    width: 200px;
+    height: 50px;
+    float: right;
+    font-size: 18px;
 }
+
 /* The Send button - hover - mouse over effect 
 #ninja_forms_field_4:hover{
 background-color: #8d5303;
@@ -250,3 +270,4 @@ border: 1px solid #ccc;
 text-shadow: 0px 0px 2px #ccc;
 box-shadow: 1px 1px 2px #ccc;
 } */
+
