@@ -24,54 +24,15 @@ body {
 #masthead {
     background: none repeat scroll 0 0 #45ac9d;
 }
+
 #masthead nav ul li {
     display: inline-block;
     margin-left: 30px;
+    text-transform: uppercase;
+    font-size: 14px;
 }
 .button {
     background: none repeat scroll 0 0 #45ac9d;
-}
-
-.social-media-navigation {
-}
-
-.social-media-navigation ul {
-	float:right;
-	width:40%;
-    list-style-type: none;
-}
-
-.social-media-navigation li {
-    color:aqua;
-}
-
-/* Blog Post Styles */
-
-.blog-post {
-    width: 50%;
-}
-
-.blog-post h2 {
-    font-size: 24px;
-    font-family: Montserrat;
-    font-weight: bold;
-}
-
-.blog-post h4 {
-    font-size: 16px;
-    font-family: Montserrat;
-    color: #a6a6a6;
-    text-transform: uppercase;
-    text-align: left;
-    margin-top: 100px;
-}
-
-.blog-post .read-more-link {
-    font-size: 12px;
-    font-family: Montserrat;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #45ac9d;
 }
 
 /* Featured Work Styles */
@@ -79,7 +40,7 @@ body {
 .homepage-featured-work li {
     list-style: none;
     display: inline-block;
-    margin: 5px;
+    margin: 4px;
 }
 
 .homepage-featured-work h3 {
@@ -103,6 +64,40 @@ body {
     text-transform: uppercase;
     font-size: 16px;
 }
+figure.case-study-thumbnails img {
+    border: 1px solid #ddd;
+}
+
+/* Blog Post Styles */
+
+.blog-post {
+    width: 50%;
+}
+
+.blog-post h2 {
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.blog-post h4 {
+    font-size: 16px;
+    font-family: Montserrat;
+    color: #a6a6a6;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.blog-post .read-more-link {
+    font-size: 12px;
+    font-family: Montserrat;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #45ac9d;
+}
+
+
 
 /* Case Studies Styles */
 
@@ -112,13 +107,12 @@ article.case-study {
 
 aside.case-study-sidebar {
     float: left;
-    width: 300px;
-    margin: 0 40px 0 0;
+    width: 360px;
+    margin: 0 80px 0 0;
 }
 
 div.case-study-images {
     float: left;
-    width: 606px;
 }
 
 div.case-study-images img {
@@ -146,3 +140,113 @@ aside.case-study-sidebar h6 {
     margin: 12px 0 24px;
     font-weight: lighter;
 }
+
+/* Footer Styles 
+
+.site-footer .site-description a {
+    color: #45ac9d;
+}
+.social-media-navigation {
+    float: right;
+    width: 40%;
+}
+li.social-icon {
+    float: right;
+    list-style-type: none;
+    margin: 0 5px;
+}
+li.social-icon i {
+    font-size: 14px;
+    color: #fff;
+    border-radius: 18px;
+    background: #3e3e3e;
+    padding: 8px;
+    width: 30px;
+    height: 30px;
+} */
+
+/* Footer Styles */
+
+
+.site-footer .site-description a {
+    color: #45ac9d;
+}
+
+ul.social-media-menu {
+    list-style: none;
+    clear: both;
+}
+
+.social-media-menu li{
+    display: inline-block;
+    background: rgba(0,0,0,0.8);
+    margin: 0px 3px;
+    width: 40px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.6em;
+    border-radius: 100%; 
+    -webkit-border-radius: 100%; 
+    -moz-border-radius: 100%;
+}
+.social-media-menu li a{
+  color: white;
+}
+
+/* Contact Us Form */
+
+/* STYLING NINJA FORMS - add to your stylesheet and adjust */
+/* The full form */
+#ninja_forms_form_1_wrap {
+}
+/* Fields marked with an * are required text */
+.ninja-forms-required-items {
+margin-bottom: 15px;
+}
+/* All Input fields */
+.ninja-forms-field {
+border: 1px solid #bfbfbf;
+font-size: 16px;
+}
+
+/* All Form Labels */
+#ninja_forms_field_1_label,
+#ninja_forms_field_2_label,
+#ninja_forms_field_3_label {
+    font-size: 14px;
+    color: #808080;
+    min-width: 220px;
+}
+
+/* Name field label and input box. 
+NB! Notice the styling changes on resizing the browser. Fix this in your media queries. This will change from theme to theme.*/
+#ninja_forms_field_1_div_wrap,
+#ninja_forms_field_1 {
+width: 40%;
+min-width: 220px;
+height: 35px;
+float: left;
+margin-right: 8px;
+}
+/* Email field input */
+#ninja_forms_field_2{
+width: 40%;
+min-width: 220px;
+height: 35px;	
+float: right;
+}
+/* Message field input */
+#ninja_forms_field_3{
+}
+/* The Send button */
+#ninja_forms_field_4 {
+background-color: #45ac9d;
+color: #fff;
+}
+/* The Send button - hover - mouse over effect 
+#ninja_forms_field_4:hover{
+background-color: #8d5303;
+border: 1px solid #ccc;
+text-shadow: 0px 0px 2px #ccc;
+box-shadow: 1px 1px 2px #ccc;
+} */
