@@ -197,7 +197,7 @@ ul.social-media-menu {
 
 /* The full form */
 #ninja_forms_form_1_wrap {
-    width: 600px;
+    width: 650px;
 }
 
 
@@ -207,23 +207,25 @@ ul.social-media-menu {
     font-size: 16px;
 }
 
-/* Name Form Labels */
+/* paragraph text */
+#ninja_forms_form_1_wrap, p {
+    font-weight: 200;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+
+/* Form Labels */
 #ninja_forms_field_1_label {
     font-size: 14px;
     color: #808080;
     min-width: 220px;
     font-weight: 200;
-}
+    margin-right: 55px;
+    margin-bottom: 
+} 
 
-/* Email Form Labels */
-#ninja_forms_field_2_label {
-    font-size: 14px;
-    color: #808080;
-    min-width: 220px;
-    font-weight: 200;
-}
-
-/* Message Form Labels */
+#ninja_forms_field_2_label,
 #ninja_forms_field_3_label {
     font-size: 14px;
     color: #808080;
@@ -231,21 +233,25 @@ ul.social-media-menu {
     font-weight: 200;
 } 
 
-/* Name field label and input box. 
-NB! Notice the styling changes on resizing the browser. Fix this in your media queries. This will change from theme to theme.*/
+/* Name field input */
 #ninja_forms_field_1_div_wrap,
 #ninja_forms_field_1 {
-    min-width: 285px;
+    width: 50%;
+    min-width: 290px;
     height: 35px;
     float: left;
-    margin-right: 8px;
+    clear: right;
+    margin-right: 20px;
 }
+
 /* Email field input */
-#ninja_forms_field_2{
-    width: 40%;
-    min-width: 285px;
-    height: 35px;	
+#ninja_forms_field_2_div_wrap,
+#ninja_forms_field_2 {
+    width: 50%;
+    max-width: 290px;
+    height: 35px;
     float: right;
+    margin-bottom: 20px;
 }
 
 /* Message field input */
@@ -263,11 +269,40 @@ NB! Notice the styling changes on resizing the browser. Fix this in your media q
     font-size: 18px;
 }
 
-/* The Send button - hover - mouse over effect 
-#ninja_forms_field_4:hover{
-background-color: #8d5303;
-border: 1px solid #ccc;
-text-shadow: 0px 0px 2px #ccc;
-box-shadow: 1px 1px 2px #ccc;
-} */
+/* 404 styles */
+
+.not-found-page {
+    background: url("img/kittens-as-frogs-header.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height: 400px;
+    padding: 60px 0;
+}
+
+.not-found-page h1 {
+	color:white;
+	font-weight:bold;
+    float: right;
+}
+
+.not-found-page h3 {
+    color: white;
+    font-family: "open sans";
+    font-size: 24px;
+    font-weight: normal;
+    float: right;
+    text-align: right;
+}
+
+.not-found-button {
+    background: none repeat scroll 0 0 #45ac9d;
+    padding: 15px 55px;
+    position: fixed;
+    left: 72%;
+    top: 450px;
+}
+
+a.not-found-button {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
 
