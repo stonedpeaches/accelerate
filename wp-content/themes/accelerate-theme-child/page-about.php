@@ -9,15 +9,16 @@
 
 get_header(); ?>
 
-<section class="about-page">
+<section class="aboutpage">
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<div class='homepage-hero'>
-				<?php the_content(); ?>
+			<div class="aboutpage-hero">
+				<h1><?php the_content(); ?></h1>
 			</div>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .container -->
 </section><!-- .home-page -->
+
 
 <section class="about-page">		
 	<div class="main-content">
@@ -27,6 +28,6 @@ get_header(); ?>
 			<?php endwhile; ?>
 		<?php endif; ?>
 	</div>
-	
+</section>
 
 <?php get_footer(); ?>

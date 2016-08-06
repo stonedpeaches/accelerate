@@ -68,6 +68,33 @@ figure.case-study-thumbnails img {
     border: 1px solid #ddd;
 }
 
+/* About Page Styles */
+.aboutpage {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height: 200px;
+    margin: 0 0 80px;
+    padding: 100px 0;
+}
+
+.aboutpage-hero {
+	text-align: center;
+    width: 400px;
+}
+
+.homepage-hero h1 {
+	color: white;
+	font-weight:bold;
+    font-size: 28px;
+}
+
+.aboutpage-hero h3 {
+    color: white;
+    font-family: "open sans";
+    font-size: 24px;
+    font-weight: normal;
+    margin: 16px 0 80px;
+}
+
 /* Blog Post Styles */
 
 .blog-post {
@@ -271,19 +298,21 @@ ul.social-media-menu {
 
 /* 404 styles */
 
-.not-found-page {
+.not-found {
     background: url("img/kittens-as-frogs-header.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
     height: 400px;
     padding: 60px 0;
 }
 
-.not-found-page h1 {
+.not-found h1 {
+    margin-top: 40px;
 	color:white;
 	font-weight:bold;
     float: right;
 }
 
-.not-found-page h3 {
+.not-found h3 {
+    margin-top: 20px;
     color: white;
     font-family: "open sans";
     font-size: 24px;
@@ -292,17 +321,16 @@ ul.social-media-menu {
     text-align: right;
 }
 
-.not-found-button {
-    background: none repeat scroll 0 0 #45ac9d;
-    padding: 15px 55px;
-    position: fixed;
-    left: 72%;
-    top: 450px;
-}
 
-a.not-found-button {
+.button a {
+    background: none repeat scroll 0 0 #45ac9d;
     color: white;
     font-weight: bold;
+    font-size: 20px;
     text-align: center;
 }
 
+h3.button {
+    padding: 15px 40px;
+    margin-top: 40px;
+}

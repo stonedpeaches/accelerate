@@ -37,5 +37,18 @@ function create_custom_post_types() {
             'rewrite' => array( 'slug' => 'case-studies' ), // slug used in the URLs for case study posts
         )
     );
+    
+    register_post_type( 'about_page', // gives new custom post type a unique name.
+        array(  // big array that defines a bunch of settings for your new post type
+            'labels' => array(
+                'name' => __( 'About Page' ), // human-readable name you see in left nav of admin
+                'singular_name' => __( 'About Us' ) // the human-readable name for a single case study post
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'about-us' ), // slug used in the URLs for case study posts
+        )
+    );
 }
+
 add_action( 'init', 'create_custom_post_types' );
