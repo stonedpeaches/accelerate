@@ -70,30 +70,19 @@ figure.case-study-thumbnails img {
 
 /* About Page Styles */
 .aboutpage {
-    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    background: url("img/taxi-photo.jpg") no-repeat scroll left bottom / cover rgba(0, 0, 0, 0);
     height: 200px;
     margin: 0 0 80px;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 
-.aboutpage-hero {
-	text-align: center;
-    width: 400px;
-}
-
-.homepage-hero h1 {
+.aboutpage-hero p {
 	color: white;
-	font-weight:bold;
-    font-size: 28px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
 }
 
-.aboutpage-hero h3 {
-    color: white;
-    font-family: "open sans";
-    font-size: 24px;
-    font-weight: normal;
-    margin: 16px 0 80px;
-}
 
 /* Blog Post Styles */
 

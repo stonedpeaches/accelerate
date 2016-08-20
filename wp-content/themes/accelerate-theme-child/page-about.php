@@ -13,21 +13,30 @@ get_header(); ?>
 	<div class="site-content">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<div class="aboutpage-hero">
-				<h1><?php the_content(); ?></h1>
+				<?php the_content(); ?>
 			</div>
 		<?php endwhile; // end of the loop. ?>
-	</div><!-- .container -->
-</section><!-- .home-page -->
+	</div><!-- site-content -->
+</section><!-- aboutpage -->
 
+<?php while ( have_posts() ) : the_post();
+    $service = get_field('service');
+    $image_1 = get_field('image_1');
+    $size = "full"; ?>
 
-<section class="about-page">		
-	<div class="main-content">
-		<?php if ( have_posts() ): ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part('content-blog', get_post_format()); ?>
-			<?php endwhile; ?>
-		<?php endif; ?>
-	</div>
-</section>
+    <div class="services">
+        <figure>
+            <?php if($image_1) {
+                echo wp_get_attachment_image( $image_1, $size ); 
+            } ?>
+        </figure>
+        <div>
+            <h5><?php echo $service ?></h5>
+            <?php the_post (); ?>
+        </div>
+    </div>
+
+<?php endwhile; // end of the loop. ?>
+
 
 <?php get_footer(); ?>
