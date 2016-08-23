@@ -48,12 +48,19 @@ get_header(); ?>
                 <p><?php echo $service_description; ?></p>
             </div>
         </section>
+        
             
     </div>
 </div>
 				
 <?php endwhile; //end the while loop
     wp_reset_postdata(); ?>
+    
+        <div class="about-contact-us">
+			<p>Interested in working with us?&nbsp;&nbsp;&nbsp;
+                <a class="button" href="<?php echo home_url(); ?>/contact">Contact Us</a></p>
+        </div>
+
 				
 </div><!-- .all-services -->
 

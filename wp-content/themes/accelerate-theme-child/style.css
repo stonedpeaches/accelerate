@@ -79,16 +79,51 @@ figure.case-study-thumbnails img {
 .aboutpage-hero p {
 	color: white;
     text-align: center;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
 }
 
-.service-description h3 {
+.service-section .service-description {
+    width: 75%;
+    float: right;
+}
+.service-section .service-description h3 {
     font-size: 18px;
+    color: #f24eb3;
+    width: 80%;
 }
 
-.service-section .service-image-left {
+.service-section .service-description p {
+    color: #3f9dc7;
+    width: 80%;
+}
+
+.service-section figure.service-image-left {
     float: left;
+    width: 25%;
+}
+
+/* button section styles */
+
+.about-contact-us {
+    width: 960px;
+	margin: auto;
+	padding: 0 10px;
+    clear: both;
+    border-top: 1px dotted #e3e1e1;
+}
+
+.about-contact-us p {
+    text-align: center;
+    font-weight: bold;
+    margin: 40px 40px;
+    font-size: 20px;
+    
+}
+.about-contact-us a.button {
+    background-color: #45ac9d;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 14px;
 }
 
 
@@ -318,8 +353,7 @@ ul.social-media-menu {
     text-align: right;
 }
 
-
-.button a {
+.not-found .button a {
     background: none repeat scroll 0 0 #45ac9d;
     color: white;
     font-weight: bold;
@@ -327,7 +361,7 @@ ul.social-media-menu {
     text-align: center;
 }
 
-h3.button {
+.not-found h3.button {
     padding: 15px 40px;
     margin-top: 40px;
 }
