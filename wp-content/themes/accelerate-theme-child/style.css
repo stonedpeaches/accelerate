@@ -83,6 +83,14 @@ figure.case-study-thumbnails img {
     font-weight: 600;
 }
 
+.service-description h3 {
+    font-size: 18px;
+}
+
+.service-section .service-image-left {
+    float: left;
+}
+
 
 /* Blog Post Styles */
 

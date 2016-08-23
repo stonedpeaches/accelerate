@@ -19,24 +19,42 @@ get_header(); ?>
 	</div><!-- site-content -->
 </section><!-- aboutpage -->
 
-<?php while ( have_posts() ) : the_post();
-    $service = get_field('service');
-    $image_1 = get_field('image_1');
-    $size = "full"; ?>
+<div class="all-services">
+	
+<?php 
+// Pull in our Services CPT
+    $args = array (
+        'post_type' => 'aboutpage', // replace with your post type name
+    );
+    $services_query = new WP_Query($args);
+?>
 
-    <div class="services">
-        <figure>
-            <?php if($image_1) {
-                echo wp_get_attachment_image( $image_1, $size ); 
-            } ?>
-        </figure>
-        <div>
-            <h5><?php echo $service ?></h5>
-            <?php the_post (); ?>
-        </div>
+<?php while ($services_query-> have_posts() ) : $services_query->the_post();
+// Variables from 'services' CPT 
+    $service_description = get_field('service_description'); 
+    $service_image = get_field('service_image'); 
+    $size = "thumbnail";
+?>
+
+<div id="primary" class="site-content">
+    <div id="content" role="main">
+
+        <section class="service-section">
+            <figure class="service-image-left">
+                <?php echo wp_get_attachment_image( $service_image, $size ); ?>
+            </figure>
+            <div class="service-description">
+                <h3><?php the_title(); ?></h3>
+                <p><?php echo $service_description; ?></p>
+            </div>
+        </section>
+            
     </div>
-
-<?php endwhile; // end of the loop. ?>
-
+</div>
+				
+<?php endwhile; //end the while loop
+    wp_reset_postdata(); ?>
+				
+</div><!-- .all-services -->
 
 <?php get_footer(); ?>
