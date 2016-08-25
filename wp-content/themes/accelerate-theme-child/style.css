@@ -101,8 +101,7 @@ figure.case-study-thumbnails img {
 
 .service-description {
     float: left;
-    padding: .5em;
-    width: 67%;
+    width: 75%;
 }
 
 .service-image {
@@ -117,6 +116,7 @@ figure.case-study-thumbnails img {
 .service-section:nth-child(even) .service-image {
     float: right;
 }
+
 
 /* button section styles */
 
