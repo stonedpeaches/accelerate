@@ -69,10 +69,11 @@ figure.case-study-thumbnails img {
 }
 
 /* About Page Styles */
+
 .aboutpage {
     background: url("img/taxi-photo.jpg") no-repeat scroll left bottom / cover rgba(0, 0, 0, 0);
     height: 200px;
-    margin: 0 0 80px;
+    margin: 0 0 40px;
     padding: 70px 0;
 }
 
@@ -82,24 +83,39 @@ figure.case-study-thumbnails img {
     font-size: 20px;
 }
 
-.service-section .service-description {
-    width: 75%;
-    float: right;
-}
-.service-section .service-description h3 {
-    font-size: 18px;
-    color: #f24eb3;
-    width: 80%;
+.service-section {
+    clear: both;
+    overflow: hidden;
 }
 
-.service-section .service-description p {
-    color: #3f9dc7;
-    width: 80%;
+.our-services h6 {
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
-.service-section figure.service-image-left {
+.our-services p {
+    text-align: center;
+}
+
+.service-description {
     float: left;
-    width: 25%;
+    padding: .5em;
+    width: 67%;
+}
+
+.service-image {
+    width: 20%;
+    margin-top: 40px;
+}
+
+.service-section:nth-child(odd) .service-image {
+    float: left;
+}
+
+.service-section:nth-child(even) .service-image {
+    float: right;
 }
 
 /* button section styles */
